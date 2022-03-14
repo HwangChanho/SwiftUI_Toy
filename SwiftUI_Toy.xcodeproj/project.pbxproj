@@ -14,6 +14,8 @@
 		1285D0C127DF4BBF00BA138D /* SwiftUI_ToyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285D0C027DF4BBF00BA138D /* SwiftUI_ToyTests.swift */; };
 		1285D0CB27DF4BBF00BA138D /* SwiftUI_ToyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285D0CA27DF4BBF00BA138D /* SwiftUI_ToyUITests.swift */; };
 		1285D0CD27DF4BBF00BA138D /* SwiftUI_ToyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285D0CC27DF4BBF00BA138D /* SwiftUI_ToyUITestsLaunchTests.swift */; };
+		1285D0DD27DFB39500BA138D /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285D0DC27DFB39500BA138D /* MemoryGame.swift */; };
+		1285D0E127DFB4C200BA138D /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285D0E027DFB4C200BA138D /* EmojiMemoryGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		1285D0C627DF4BBF00BA138D /* SwiftUI_ToyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_ToyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1285D0CA27DF4BBF00BA138D /* SwiftUI_ToyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ToyUITests.swift; sourceTree = "<group>"; };
 		1285D0CC27DF4BBF00BA138D /* SwiftUI_ToyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ToyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1285D0DC27DFB39500BA138D /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		1285D0E027DFB4C200BA138D /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +98,14 @@
 		1285D0AE27DF4BBE00BA138D /* SwiftUI_Toy */ = {
 			isa = PBXGroup;
 			children = (
+				1285D0DF27DFB4AF00BA138D /* ViewModel */,
+				1285D0DE27DFB3E900BA138D /* Model */,
+				1285D0DB27DF617A00BA138D /* System */,
+				1285D0DA27DF4C8C00BA138D /* UI */,
+				1285D0D927DF4C5100BA138D /* Resources */,
 				1285D0AF27DF4BBE00BA138D /* SwiftUI_ToyApp.swift */,
-				1285D0B127DF4BBE00BA138D /* ContentView.swift */,
-				1285D0B327DF4BBF00BA138D /* Assets.xcassets */,
-				1285D0B527DF4BBF00BA138D /* Preview Content */,
 			);
 			path = SwiftUI_Toy;
-			sourceTree = "<group>";
-		};
-		1285D0B527DF4BBF00BA138D /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				1285D0B627DF4BBF00BA138D /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		1285D0BF27DF4BBF00BA138D /* SwiftUI_ToyTests */ = {
@@ -125,6 +123,46 @@
 				1285D0CC27DF4BBF00BA138D /* SwiftUI_ToyUITestsLaunchTests.swift */,
 			);
 			path = SwiftUI_ToyUITests;
+			sourceTree = "<group>";
+		};
+		1285D0D927DF4C5100BA138D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1285D0B627DF4BBF00BA138D /* Preview Assets.xcassets */,
+				1285D0B327DF4BBF00BA138D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1285D0DA27DF4C8C00BA138D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1285D0B127DF4BBE00BA138D /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1285D0DB27DF617A00BA138D /* System */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		1285D0DE27DFB3E900BA138D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1285D0DC27DFB39500BA138D /* MemoryGame.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1285D0DF27DFB4AF00BA138D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1285D0E027DFB4C200BA138D /* EmojiMemoryGame.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1285D0DD27DFB39500BA138D /* MemoryGame.swift in Sources */,
 				1285D0B227DF4BBE00BA138D /* ContentView.swift in Sources */,
 				1285D0B027DF4BBE00BA138D /* SwiftUI_ToyApp.swift in Sources */,
+				1285D0E127DFB4C200BA138D /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -401,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -418,13 +458,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Toy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Toy\"";
 				DEVELOPMENT_TEAM = QUVU2PY6PG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -436,7 +477,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,13 +488,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Toy/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_Toy\"";
 				DEVELOPMENT_TEAM = QUVU2PY6PG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,7 +507,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
