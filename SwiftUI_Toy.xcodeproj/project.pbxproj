@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123800D827E0565E0052029C /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123800D727E0565E0052029C /* AspectVGrid.swift */; };
+		123800DA27E0708D0052029C /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123800D927E0708D0052029C /* Pie.swift */; };
+		123800DC27E074590052029C /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123800DB27E074590052029C /* Cardify.swift */; };
 		1285D0B027DF4BBE00BA138D /* SwiftUI_ToyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285D0AF27DF4BBE00BA138D /* SwiftUI_ToyApp.swift */; };
-		1285D0B227DF4BBE00BA138D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285D0B127DF4BBE00BA138D /* ContentView.swift */; };
+		1285D0B227DF4BBE00BA138D /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285D0B127DF4BBE00BA138D /* EmojiMemoryGameView.swift */; };
 		1285D0B427DF4BBF00BA138D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1285D0B327DF4BBF00BA138D /* Assets.xcassets */; };
 		1285D0B727DF4BBF00BA138D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1285D0B627DF4BBF00BA138D /* Preview Assets.xcassets */; };
 		1285D0C127DF4BBF00BA138D /* SwiftUI_ToyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1285D0C027DF4BBF00BA138D /* SwiftUI_ToyTests.swift */; };
@@ -36,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		123800D727E0565E0052029C /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		123800D927E0708D0052029C /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		123800DB27E074590052029C /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 		1285D0AC27DF4BBE00BA138D /* SwiftUI_Toy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Toy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1285D0AF27DF4BBE00BA138D /* SwiftUI_ToyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ToyApp.swift; sourceTree = "<group>"; };
-		1285D0B127DF4BBE00BA138D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1285D0B127DF4BBE00BA138D /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		1285D0B327DF4BBF00BA138D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1285D0B627DF4BBF00BA138D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1285D0BC27DF4BBF00BA138D /* SwiftUI_ToyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_ToyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,7 +143,10 @@
 		1285D0DA27DF4C8C00BA138D /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				1285D0B127DF4BBE00BA138D /* ContentView.swift */,
+				1285D0B127DF4BBE00BA138D /* EmojiMemoryGameView.swift */,
+				123800DB27E074590052029C /* Cardify.swift */,
+				123800D927E0708D0052029C /* Pie.swift */,
+				123800D727E0565E0052029C /* AspectVGrid.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -295,10 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123800DA27E0708D0052029C /* Pie.swift in Sources */,
+				123800DC27E074590052029C /* Cardify.swift in Sources */,
 				1285D0DD27DFB39500BA138D /* MemoryGame.swift in Sources */,
-				1285D0B227DF4BBE00BA138D /* ContentView.swift in Sources */,
+				1285D0B227DF4BBE00BA138D /* EmojiMemoryGameView.swift in Sources */,
 				1285D0B027DF4BBE00BA138D /* SwiftUI_ToyApp.swift in Sources */,
 				1285D0E127DFB4C200BA138D /* EmojiMemoryGame.swift in Sources */,
+				123800D827E0565E0052029C /* AspectVGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
