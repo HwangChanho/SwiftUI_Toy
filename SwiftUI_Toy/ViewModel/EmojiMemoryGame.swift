@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class EmojiMemoryGame {
+final class EmojiMemoryGame: ObservableObject {
     static let emojis: Array<String> = ["💜", "💚", "🧡", "❤️", "🖤", "🤍", "🤎", "💙", "💔", "❤️‍🔥", "❤️‍🩹", "❣️", "💕", "💞", "💓", "💗", "💖", "💘", "💝"]
     
     static func createMemoryGame() -> MemoryGame<String> {
@@ -16,9 +16,16 @@ final class EmojiMemoryGame {
         }
     }
     
-    private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
+    // @Published 오브젝트 값의 변화를 알린다
+    @Published private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
     
     var cards: Array<MemoryGame<String>.Card> {
         return model.cards
+    }
+    
+    // MARK: - Intent(s)
+    
+    func choose(_ card: MemoryGame<String>.Card) {
+        model.choose(card)
     }
 }

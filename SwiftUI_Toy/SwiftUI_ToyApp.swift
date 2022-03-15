@@ -10,9 +10,11 @@ import SwiftUI
 // 시작할떄 메인프로그램이 된다 @main
 @main
 struct SwiftUI_ToyApp: App {
+    let game = EmojiMemoryGame()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: game)
         }
     }
 }
